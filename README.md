@@ -12,8 +12,11 @@ Docker installed
 Docker Compose installed
 
 Step 1: Clone the Repository
+
 Step 2: Start Apache ""NiFi docker-compose up -d""
+
 Step 3: Access NiFi ""http://localhost:8088/nifi""
+
 Step 4: Stop NiFi ""docker-compose down""
 
 Version Used
