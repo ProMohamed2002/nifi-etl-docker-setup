@@ -2,12 +2,10 @@ version: '3.8'
 
 services:
   nifi:
-    image: apache/nifi:1.23.2
+    build: .
     container_name: nifi-etl
     ports:
-      - "8088:8088"
-    environment:
-      - NIFI_WEB_HTTP_PORT=8080
+      - "8080:8080"
     volumes:
       - ./nifi_data:/opt/nifi/nifi-current/data
     restart: unless-stopped
